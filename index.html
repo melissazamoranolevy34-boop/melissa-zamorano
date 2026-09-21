@@ -1,38 +1,848 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Portafolio profesional de Melissa Zamorano Levy">
-  <title>Melissa Zamorano Levy | Futuristas Unidos</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio profesional de Melissa Zamorano" />
+  <title>Melissa Zamorano | Futuristas Unidos</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+
   <style>
-    :root{--bg:#050817;--panel:#0d1830dd;--text:#f5fbff;--muted:#b7c9e2;--cyan:#42e8ff;--pink:#ff4fd8;--violet:#9375ff;--green:#5bf2bd;--yellow:#ffe66d;--line:#42e8ff55}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Poppins,sans-serif;color:var(--text);background:radial-gradient(circle at 10% 5%,#173f67 0,transparent 25%),radial-gradient(circle at 90% 15%,#54205f 0,transparent 27%),linear-gradient(135deg,#050817,#09162a 55%,#170d2a);line-height:1.6;overflow-x:hidden}#particles{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none;opacity:.8}body:after{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background-image:linear-gradient(#42e8ff0a 1px,transparent 1px),linear-gradient(90deg,#42e8ff0a 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,#000,transparent 85%)}a{color:inherit;text-decoration:none}.container{width:min(1150px,calc(100% - 40px));margin:auto}.header{position:sticky;top:0;z-index:20;background:#050817d9;backdrop-filter:blur(16px);border-bottom:1px solid var(--line);box-shadow:0 0 25px #42e8ff12}.nav{height:80px;display:flex;align-items:center;justify-content:space-between}.brand{font:800 1.35rem Orbitron;letter-spacing:.04em;color:#fff;text-shadow:0 0 12px var(--cyan)}.brand span{color:var(--pink)}.links{display:flex;gap:25px;align-items:center;color:var(--muted);font-size:.86rem;font-weight:600}.links a{transition:.25s}.links a:hover{color:var(--cyan);text-shadow:0 0 12px var(--cyan)}.contact-link{border:1px solid var(--cyan);border-radius:30px;padding:9px 16px;color:var(--cyan)!important;box-shadow:0 0 14px #42e8ff44}.menu{display:none;background:none;border:0;color:#fff;font-size:1.8rem}.hero{padding:100px 0 80px}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:50px;align-items:center}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.18em;font-size:.74rem;font-weight:800;margin-bottom:17px;text-shadow:0 0 12px #42e8ff99}h1,h2,h3{font-family:Orbitron;line-height:1.1}.hero h1{font-size:clamp(2.8rem,5.8vw,5.3rem);letter-spacing:-.06em;text-shadow:0 0 25px #42e8ff33}.hero h1 span{background:linear-gradient(90deg,var(--cyan),var(--pink),var(--yellow));-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% auto;animation:gradient 5s linear infinite}.hero-text{max-width:620px;color:var(--muted);font-size:1.05rem;margin:23px 0 32px}.actions{display:flex;gap:15px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 22px;border-radius:30px;font-weight:800;border:1px solid #ffffff33;transition:.25s}.btn:hover{transform:translateY(-4px);box-shadow:0 0 28px #42e8ff77}.primary{background:linear-gradient(100deg,var(--cyan),var(--green));color:#03141c;border:0}.ghost{background:#ffffff08}.visual{position:relative;display:grid;place-items:center;min-height:510px}.visual:before{content:"";position:absolute;width:380px;height:380px;border-radius:50%;background:conic-gradient(var(--cyan),var(--pink),var(--violet),var(--cyan));filter:blur(65px);opacity:.35;animation:spin 9s linear infinite}.photo{position:relative;z-index:2;width:min(100%,390px);padding:14px 14px 0;border:1px solid var(--cyan);border-radius:35px 35px 18px 18px;background:#ffffff0c;box-shadow:0 0 20px var(--cyan),0 0 80px #ff4fd833;animation:levitate 5s ease-in-out infinite}.photo img{height:500px;width:100%;object-fit:cover;border-radius:25px 25px 10px 10px}.tag{position:absolute;left:-13px;bottom:18px;z-index:3;padding:15px 18px;background:#071524f2;border:1px solid var(--pink);border-left:4px solid var(--green);box-shadow:0 0 25px #ff4fd866;animation:levitate 4s ease-in-out infinite reverse}.tag span{display:block;color:var(--muted);font-size:.73rem}.section{padding:105px 0}.about,.services{background:#081326cc;border-block:1px solid var(--line)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px}.about h2,.heading h2{font-size:clamp(2.1rem,4vw,3.6rem)}.about h2 span{color:var(--pink);text-shadow:0 0 16px #ff4fd877}.copy{color:var(--muted)}.copy p+p{margin-top:16px}.stats{display:flex;gap:30px;flex-wrap:wrap;margin-top:32px;padding-top:20px;border-top:1px solid var(--line)}.stats strong{display:block;font:700 1.8rem Orbitron;color:var(--yellow);text-shadow:0 0 12px #ffe66d99}.stats small{color:var(--muted)}.heading{text-align:center;margin-bottom:40px}.heading p:last-child{color:var(--muted);margin-top:10px}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:21px}.service{padding:27px 22px;background:linear-gradient(145deg,#ffffff0c,#ffffff02);border:1px solid var(--line);border-radius:20px;box-shadow:inset 0 0 20px #42e8ff08,0 0 20px #42e8ff14;transition:.3s}.service:hover{transform:translateY(-7px) scale(1.01);border-color:var(--pink);box-shadow:0 0 30px #ff4fd844}.service h3{font-size:1.08rem;color:var(--cyan);margin-bottom:15px}.service ul{list-style:none;color:var(--muted)}.service li{position:relative;padding:6px 0 6px 19px}.service li:before{content:"✦";position:absolute;left:0;color:var(--pink);text-shadow:0 0 10px var(--pink)}.docs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.doc{display:grid;place-items:center;min-height:78px;text-align:center;padding:18px;border:1px solid var(--line);border-radius:16px;background:#ffffff08;color:var(--muted);font-weight:700;transition:.25s}.doc:hover{color:var(--cyan);border-color:var(--pink);box-shadow:0 0 25px #ff4fd844;transform:translateY(-4px)}.contact{background:linear-gradient(110deg,#10394bdf,#30174bdf);border-top:1px solid var(--line)}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:start}.contact h2{font-size:clamp(2.1rem,4vw,3.5rem)}.contact-copy p{color:var(--muted);margin:17px 0}.form-wrap{padding:25px 22px;border:1px solid var(--cyan);border-radius:22px;background:#050817cc;box-shadow:0 0 30px #42e8ff33}.form{display:grid;gap:13px}.form input,.form textarea{width:100%;font:inherit;color:#fff;background:#ffffff08;border:1px solid #ffffff2b;border-radius:11px;padding:13px;outline:0}.form input:focus,.form textarea:focus{border-color:var(--pink);box-shadow:0 0 15px #ff4fd855}.form textarea{min-height:140px;resize:vertical}.whatsapp{position:fixed;right:22px;bottom:22px;z-index:30;width:63px;height:63px;display:grid;place-items:center;border-radius:50%;background:#25d366;color:#fff;font-size:1.9rem;box-shadow:0 0 0 8px #25d36622,0 0 32px #25d366aa;animation:levitate 2.5s ease-in-out infinite}.footer{padding:26px 0 35px;border-top:1px solid var(--line);color:var(--muted);font-size:.78rem}.footer .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}@keyframes gradient{to{background-position:200% center}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes levitate{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}@media(max-width:850px){.hero-grid,.about-grid,.contact-grid,.service-grid,.docs{grid-template-columns:1fr}.visual{min-height:430px}}@media(max-width:700px){.menu{display:block}.links{display:none;position:absolute;top:80px;left:20px;right:20px;flex-direction:column;align-items:flex-start;padding:20px;background:#071323f5;border:1px solid var(--line);border-radius:15px}.links.open{display:flex}.section{padding:75px 0}.photo img{height:420px}}
+    :root {
+      --bg: #031923;
+      --text: #f2ffff;
+      --muted: #b8dce5;
+      --cyan: #00f5d4;
+      --turquoise: #20e0d0;
+      --blue: #00bfff;
+      --deep-blue: #0066ff;
+      --sky: #63e8ff;
+      --line: rgba(0, 245, 212, 0.45);
+      --green: #5bf2bd;
+      --yellow: #ffe66d;
+      --pink: #ff4fd8;
+      --violet: #9375ff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 0% 0%, rgba(0, 245, 212, 0.35), transparent 25%),
+        radial-gradient(circle at 100% 10%, rgba(0, 191, 255, 0.35), transparent 30%),
+        radial-gradient(circle at 50% 100%, rgba(0, 102, 255, 0.3), transparent 35%),
+        linear-gradient(135deg, #031923, #062b46 50%, #031329);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    #particles {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+      opacity: 0.9;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(0, 245, 212, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 245, 212, 0.05) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.18));
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1150px, calc(100% - 40px));
+      margin: auto;
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: rgba(3, 25, 35, 0.75);
+      backdrop-filter: blur(15px);
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 0 25px rgba(0, 245, 212, 0.12);
+    }
+
+    .nav {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      font: 800 1.35rem "Orbitron", sans-serif;
+      letter-spacing: 0.04em;
+      color: #fff;
+      text-shadow: 0 0 12px var(--cyan);
+    }
+
+    .brand span {
+      color: var(--pink);
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      color: var(--muted);
+      font-size: 0.86rem;
+      font-weight: 600;
+    }
+
+    .links a {
+      transition: 0.25s ease;
+    }
+
+    .links a:hover {
+      color: var(--cyan);
+      text-shadow: 0 0 12px var(--cyan);
+    }
+
+    .contact-link {
+      border: 1px solid var(--cyan);
+      border-radius: 30px;
+      padding: 9px 16px;
+      color: var(--cyan) !important;
+      box-shadow: 0 0 14px rgba(0, 245, 212, 0.28);
+    }
+
+    .menu {
+      display: none;
+      background: none;
+      border: 0;
+      color: #fff;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    .hero {
+      padding: 100px 0 80px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      color: var(--cyan);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.74rem;
+      font-weight: 800;
+      margin-bottom: 17px;
+      text-shadow: 0 0 12px rgba(0, 245, 212, 0.8);
+    }
+
+    h1, h2, h3 {
+      font-family: "Orbitron", sans-serif;
+      line-height: 1.1;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.9rem, 5.8vw, 5.4rem);
+      letter-spacing: -0.06em;
+      text-shadow: 0 0 25px rgba(0, 245, 212, 0.15);
+    }
+
+    .hero h1 span {
+      background: linear-gradient(
+        90deg,
+        #00f5d4,
+        #20e0d0,
+        #00bfff,
+        #63e8ff,
+        #0066ff
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      background-size: 300% auto;
+      animation: gradient 5s linear infinite;
+    }
+
+    .hero-text {
+      max-width: 620px;
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin: 23px 0 32px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 22px;
+      border-radius: 30px;
+      font-weight: 800;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: 0.25s ease;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0 28px rgba(0, 245, 212, 0.75);
+    }
+
+    .primary {
+      background: linear-gradient(100deg, var(--cyan), var(--blue));
+      color: #03141c;
+      border: 0;
+    }
+
+    .ghost {
+      background: rgba(255,255,255,0.04);
+      color: var(--text);
+    }
+
+    .visual {
+      position: relative;
+      display: grid;
+      place-items: center;
+      min-height: 510px;
+    }
+
+    .visual::before {
+      content: "";
+      position: absolute;
+      width: 380px;
+      height: 380px;
+      border-radius: 50%;
+      background: conic-gradient(
+        #00f5d4,
+        #20e0d0,
+        #00bfff,
+        #0066ff,
+        #00f5d4
+      );
+      filter: blur(60px);
+      opacity: 0.5;
+      animation: spin 9s linear infinite;
+    }
+
+    .photo {
+      position: relative;
+      z-index: 2;
+      width: min(100%, 390px);
+      padding: 14px 14px 0;
+      border: 1px solid var(--cyan);
+      border-radius: 35px 35px 18px 18px;
+      background: rgba(255,255,255,0.04);
+      box-shadow:
+        0 0 18px #00f5d4,
+        0 0 40px #00bfff,
+        0 0 90px rgba(0, 102, 255, 0.65);
+      animation: levitate 5s ease-in-out infinite;
+    }
+
+    .photo img {
+      height: 500px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 25px 25px 10px 10px;
+    }
+
+    .tag {
+      position: absolute;
+      left: -13px;
+      bottom: 18px;
+      z-index: 3;
+      padding: 15px 18px;
+      background: rgba(7, 21, 36, 0.96);
+      border: 1px solid var(--cyan);
+      border-left: 4px solid var(--green);
+      box-shadow: 0 0 25px rgba(0, 245, 212, 0.45);
+      animation: levitate 4s ease-in-out infinite reverse;
+    }
+
+    .tag strong {
+      display: block;
+      font-size: 0.9rem;
+      margin-bottom: 3px;
+    }
+
+    .tag span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.73rem;
+    }
+
+    .section {
+      padding: 105px 0;
+    }
+
+    .about, .services {
+      background: rgba(8, 19, 38, 0.85);
+      border-block: 1px solid var(--line);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 65px;
+    }
+
+    .about h2, .heading h2 {
+      font-size: clamp(2.1rem, 4vw, 3.6rem);
+    }
+
+    .about h2 span {
+      color: var(--cyan);
+      text-shadow: 0 0 16px rgba(0, 245, 212, 0.65);
+    }
+
+    .copy {
+      color: var(--muted);
+    }
+
+    .copy p + p {
+      margin-top: 16px;
+    }
+
+    .stats {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+    }
+
+    .stats strong {
+      display: block;
+      font: 700 1.8rem "Orbitron", sans-serif;
+      color: var(--yellow);
+      text-shadow: 0 0 12px rgba(255, 230, 109, 0.6);
+    }
+
+    .stats small {
+      color: var(--muted);
+    }
+
+    .heading {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .heading p:last-child {
+      color: var(--muted);
+      margin-top: 10px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 21px;
+    }
+
+    .service {
+      padding: 27px 22px;
+      background: linear-gradient(145deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: inset 0 0 20px rgba(0, 245, 212, 0.06), 0 0 20px rgba(0, 245, 212, 0.12);
+      transition: 0.3s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-7px) scale(1.01);
+      border-color: var(--cyan);
+      box-shadow: 0 0 30px rgba(0, 245, 212, 0.25);
+    }
+
+    .service h3 {
+      font-size: 1.08rem;
+      color: var(--cyan);
+      margin-bottom: 15px;
+    }
+
+    .service ul {
+      list-style: none;
+      color: var(--muted);
+    }
+
+    .service li {
+      position: relative;
+      padding: 6px 0 6px 19px;
+    }
+
+    .service li::before {
+      content: "✦";
+      position: absolute;
+      left: 0;
+      color: var(--green);
+      text-shadow: 0 0 10px var(--green);
+    }
+
+    .docs {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .doc {
+      display: grid;
+      place-items: center;
+      min-height: 78px;
+      text-align: center;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.05);
+      color: var(--muted);
+      font-weight: 700;
+      transition: 0.25s ease;
+    }
+
+    .doc:hover {
+      color: var(--cyan);
+      border-color: var(--cyan);
+      box-shadow: 0 0 25px rgba(0, 245, 212, 0.25);
+      transform: translateY(-4px);
+    }
+
+    .contact {
+      background: linear-gradient(110deg, rgba(7, 49, 62, 0.9), rgba(18, 30, 77, 0.9));
+      border-top: 1px solid var(--line);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 42px;
+      align-items: start;
+    }
+
+    .contact h2 {
+      font-size: clamp(2.1rem, 4vw, 3.5rem);
+    }
+
+    .contact-copy p {
+      color: var(--muted);
+      margin: 17px 0;
+    }
+
+    .form-wrap {
+      padding: 25px 22px;
+      border: 1px solid var(--cyan);
+      border-radius: 22px;
+      background: rgba(5, 8, 23, 0.75);
+      box-shadow: 0 0 30px rgba(0, 245, 212, 0.2);
+    }
+
+    .form {
+      display: grid;
+      gap: 13px;
+    }
+
+    .form input,
+    .form textarea {
+      width: 100%;
+      font: inherit;
+      color: #fff;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 11px;
+      padding: 13px;
+      outline: none;
+    }
+
+    .form input:focus,
+    .form textarea:focus {
+      border-color: var(--cyan);
+      box-shadow: 0 0 15px rgba(0, 245, 212, 0.25);
+    }
+
+    .form textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 30;
+      width: 63px;
+      height: 63px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #25d366;
+      color: #fff;
+      font-size: 1.9rem;
+      box-shadow: 0 0 0 8px rgba(37, 211, 102, 0.14), 0 0 32px rgba(37, 211, 102, 0.6);
+      animation: levitate 2.5s ease-in-out infinite;
+    }
+
+    .footer {
+      padding: 26px 0 35px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+
+    .footer .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    @keyframes gradient {
+      to { background-position: 200% center; }
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes levitate {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-9px); }
+    }
+
+    @media (max-width: 850px) {
+      .hero-grid,
+      .about-grid,
+      .contact-grid,
+      .service-grid,
+      .docs {
+        grid-template-columns: 1fr;
+      }
+
+      .visual {
+        min-height: 430px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .menu {
+        display: block;
+      }
+
+      .links {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 20px;
+        right: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        background: rgba(7, 19, 35, 0.96);
+        border: 1px solid var(--line);
+        border-radius: 15px;
+      }
+
+      .links.open {
+        display: flex;
+      }
+
+      .section {
+        padding: 75px 0;
+      }
+
+      .photo img {
+        height: 420px;
+      }
+    }
   </style>
 </head>
 <body>
   <canvas id="particles" aria-hidden="true"></canvas>
-  <header class="header"><div class="container nav"><a class="brand" href="#inicio">Melissa Zamorano <span>Levy</span></a><button class="menu" aria-label="Abrir menú">☰</button><nav class="links"><a href="#sobre-mi">Sobre mí</a><a href="#servicios">Servicios</a><a href="#documentos">Documentos</a><a class="contact-link" href="#contacto">Contacto</a></nav></div></header>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="#inicio" class="brand">Melissa Zamorano</a>
+
+      <button class="menu" aria-label="Abrir menú">☰</button>
+
+      <nav class="links" aria-label="Navegación principal">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#documentos">Documentos</a>
+        <a href="#contacto" class="contact-link">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
   <main>
-    <section id="inicio" class="hero"><div class="container hero-grid"><div><p class="eyebrow">Futuristas Unidos · Salud digital</p><h1>Melissa Zamorano <span>Levy</span></h1><p class="hero-text">Técnico Superior de Enfermería y Tecnóloga en Informática Biomédica. Experiencia clínica, innovación y soluciones digitales para el cuidado de la salud.</p><div class="actions"><a class="btn primary" href="#servicios">Ver servicios</a><a class="btn ghost" href="cv_melissa_zamorano.pdf" download>Descargar CV</a></div></div><div class="visual"><div class="photo"><img src="img_perfil.jpeg" alt="Melissa Zamorano Levy"></div><div class="tag"><strong>16 años de experiencia</strong><span>TENS · Informática Biomédica</span></div></div></div></section>
-    <section id="sobre-mi" class="section about"><div class="container about-grid"><div><p class="eyebrow">Sobre mí</p><h2>Experiencia humana, <span>visión tecnológica.</span></h2></div><div class="copy"><p>Soy Técnico Superior de Enfermería con 16 años de experiencia en áreas críticas y atención clínica domiciliaria. También soy Tecnóloga en Informática Biomédica, con especialización en sistemas HIS, análisis de datos clínicos y transformación digital en salud.</p><p>Combino la atención directa del paciente con la mejora de procesos clínicos mediante tecnología, información sanitaria y soluciones orientadas a la calidad.</p><div class="stats"><div><strong>16+</strong><small>Años de experiencia</small></div><div><strong>HIS</strong><small>Datos clínicos</small></div><div><strong>24/7</strong><small>Compromiso humano</small></div></div></div></div></section>
-    <section id="servicios" class="section services"><div class="container"><div class="heading"><p class="eyebrow">Servicios como TENS a domicilio</p><h2>Atención clínica especializada</h2><p>Cuidados profesionales y acompañamiento para pacientes y familias.</p></div><div class="service-grid"><article class="service"><h3>Atención clínica</h3><ul><li>Atención clínica directa</li><li>Administración de medicamentos IM, SC, EV y orales</li><li>Control de signos vitales y monitoreo clínico</li><li>Manejo de pacientes postoperatorios</li></ul></article><article class="service"><h3>Cuidados continuos</h3><ul><li>Curaciones avanzadas y manejo de heridas complejas</li><li>Atención de pacientes crónicos y dependientes</li><li>Educación al paciente y familia</li></ul></article><article class="service"><h3>Procedimientos especializados</h3><ul><li>Instalación y manejo de vías periféricas</li><li>Retiro de puntos y suturas</li><li>Nebulizaciones y manejo respiratorio básico</li><li>Control glicémico y manejo de insulina</li><li>Toma de muestras: sangre, orina y cultivos</li></ul></article></div></div></section>
-    <section id="documentos" class="section"><div class="container"><div class="heading"><p class="eyebrow">Documentos profesionales</p><h2>Certificaciones y archivos</h2></div><div class="docs"><a class="doc" href="cv_melissa_zamorano.pdf" download>📄 Currículum Vitae ↧</a><a class="doc" href="titulo_tens.pdf" download>📄 Título TENS ↧</a><a class="doc" href="titulo_informatica_biomedica.pdf" download>📄 Informática Biomédica ↧</a><a class="doc" href="evaluacion_proyectos_ti.pdf" download>📄 Evaluación de proyectos TI ↧</a><a class="doc" href="certificacion_iaas.png" download>🖼️ Certificación IAAS ↧</a><a class="doc" href="certificacion_acls.png" download>🖼️ Certificación ACLS ↧</a><a class="doc" href="acreditada.PNG" download>🖼️ Acreditación ↧</a><a class="doc" href="registro_salud.pdf" download>📄 Registro de salud ↧</a><a class="doc" href="vacuna_hepatitis_b.pdf" download>📄 Vacuna hepatitis B ↧</a><a class="doc" href="ops_fhir.pdf" download>📄 OPS FHIR ↧</a><a class="doc" href="ops_cie11.pdf" download>📄 OPS CIE-11 ↧</a><a class="doc" href="ops_sistemas_salud.pdf" download>📄 Sistemas de salud ↧</a></div></div></section>
-    <section id="contacto" class="section contact"><div class="container contact-grid"><div class="contact-copy"><p class="eyebrow">Contacto</p><h2>Conversemos sobre tu cuidado.</h2><p>Completa el formulario o escríbeme directamente por WhatsApp.</p><a class="btn primary" href="https://wa.me/56958758398?text=Hola%20Melissa%2C%20quisiera%20consultar%20por%20tus%20servicios" target="_blank" rel="noopener">Escribir por WhatsApp</a></div><div class="form-wrap"><form class="form" action="mailto:contacto@melissazamoranolevy.cl" method="post" enctype="text/plain"><input name="nombre" placeholder="Tu nombre" required><input type="email" name="email" placeholder="Tu correo electrónico" required><input name="asunto" placeholder="Asunto" required><textarea name="mensaje" placeholder="Escribe tu mensaje" required></textarea><button class="btn primary" type="submit">Enviar mensaje</button></form></div></div></section>
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"• Salud digital</p>
+          <h1>Melissa <span>Zamorano</span></h1>
+          <p class="hero-text">
+            Técnico Superior de Enfermería y Tecnóloga en Informática Biomédica.
+            Experiencia clínica, innovación y soluciones digitales para el cuidado de la salud.
+          </p>
+
+          <div class="actions">
+            <a href="#servicios" class="btn primary">Ver servicios</a>
+            <a href="cv_melissa_zamorano.pdf" class="btn ghost" download>Descargar CV</a>
+          </div>
+        </div>
+
+        <div class="visual">
+          <div class="photo">
+            <img src="img_perfil.jpeg" alt="Melissa Zamorano" />
+          </div>
+          <div class="tag">
+            <strong>16 años de experiencia</strong>
+            <span>TENS • Informática Biomédica</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">Sobre mí</p>
+          <h2>Experiencia humana, <span>visión tecnológica.</span></h2>
+        </div>
+
+        <div class="copy">
+          <p>
+            Soy Técnico Superior de Enfermería con 16 años de experiencia en áreas críticas
+            y atención clínica domiciliaria. También soy Tecnóloga en Informática Biomédica,
+            con especialización en sistemas HIS, análisis de datos clínicos y transformación
+            digital en salud.
+          </p>
+          <p>
+            Combino la atención directa del paciente con la mejora de procesos clínicos mediante
+            tecnología, información sanitaria y soluciones orientadas a la calidad.
+          </p>
+
+          <div class="stats">
+            <div>
+              <strong>16+</strong>
+              <small>Años de experiencia</small>
+            </div>
+            <div>
+              <strong>HIS</strong>
+              <small>Datos clínicos</small>
+            </div>
+            <div>
+              <strong>24/7</strong>
+              <small>Compromiso humano</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="section services">
+      <div class="container">
+        <div class="heading">
+          <p class="eyebrow">Servicios como TENS a domicilio</p>
+          <h2>Atención clínica especializada</h2>
+          <p>Cuidados profesionales y acompañamiento para pacientes y familias.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service">
+            <h3>Atención clínica</h3>
+            <ul>
+              <li>Atención clínica directa</li>
+              <li>Administración de medicamentos IM, SC, EV y orales</li>
+              <li>Control de signos vitales y monitoreo clínico</li>
+              <li>Manejo de pacientes postoperatorios</li>
+            </ul>
+          </article>
+
+          <article class="service">
+            <h3>Cuidados continuos</h3>
+            <ul>
+              <li>Curaciones avanzadas y manejo de heridas complejas</li>
+              <li>Atención de pacientes crónicos y dependientes</li>
+              <li>Educación al paciente y familia</li>
+            </ul>
+          </article>
+
+          <article class="service">
+            <h3>Procedimientos especializados</h3>
+            <ul>
+              <li>Instalación y manejo de vías periféricas</li>
+              <li>Retiro de puntos y suturas</li>
+              <li>Nebulizaciones y manejo respiratorio básico</li>
+              <li>Control glicémico y manejo de insulina</li>
+              <li>Toma de muestras: sangre, orina y cultivos</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="documentos" class="section">
+      <div class="container">
+        <div class="heading">
+          <p class="eyebrow">Documentos profesionales</p>
+          <h2>Certificaciones y archivos</h2>
+        </div>
+
+        <div class="docs">
+          <a class="doc" href="cv_melissa_zamorano.pdf" download>📄 Currículum Vitae ↧</a>
+          <a class="doc" href="titulo_tens.pdf" download>📄 Título TENS ↧</a>
+          <a class="doc" href="titulo_informatica_biomedica.pdf" download>📄 Informática Biomédica ↧</a>
+          <a class="doc" href="evaluacion_proyectos_ti.pdf" download>📄 Evaluación de proyectos TI ↧</a>
+          <a class="doc" href="certificacion_iaas.png" download>🖼️ Certificación IAAS ↧</a>
+          <a class="doc" href="certificacion_acls.png" download>🖼️ Certificación ACLS ↧</a>
+          <a class="doc" href="acreditada.PNG" download>🖼️ Acreditación ↧</a>
+          <a class="doc" href="registro_salud.pdf" download>📄 Registro de salud ↧</a>
+          <a class="doc" href="vacuna_hepatitis_b.pdf" download>📄 Vacuna hepatitis B ↧</a>
+          <a class="doc" href="ops_fhir.pdf" download>📄 OPS FHIR ↧</a>
+          <a class="doc" href="ops_cie11.pdf" download>📄 OPS CIE-11 ↧</a>
+          <a class="doc" href="ops_sistemas_salud.pdf" download>📄 Sistemas de salud ↧</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow">Contacto</p>
+          <h2>Conversemos sobre tu cuidado.</h2>
+          <p>Completa el formulario o escríbeme directamente por WhatsApp.</p>
+          <a class="btn primary" href="https://wa.me/56958758398?text=Hola%20Melissa%2C%20quisiera%20consultar%20por%20tus%20servicios" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+        </div>
+
+        <div class="form-wrap">
+          <form class="form" action="mailto:contacto@melissazamoranolevy.cl" method="post" enctype="text/plain">
+            <input name="nombre" placeholder="Tu nombre" required />
+            <input type="email" name="email" placeholder="Tu correo electrónico" required />
+            <input name="asunto" placeholder="Asunto" required />
+            <textarea name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+            <button type="submit" class="btn primary">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
+
   <a class="whatsapp" href="https://wa.me/56958758398?text=Hola%20Melissa%2C%20quisiera%20consultar%20por%20tus%20servicios" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">✆</a>
-  <footer class="footer"><div class="container"><span>© <span id="year"></span> Melissa Zamorano Levy</span><span>Informática biomédica · Salud digital</span></div></footer>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© <span id="year"></span> Melissa Zamorano</span>
+      <span>Informática biomédica • Salud digital</span>
+    </div>
+  </footer>
+
   <script>
-    const menu=document.querySelector('.menu'),links=document.querySelector('.links');
-    menu.addEventListener('click',()=>links.classList.toggle('open'));
-    document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
-    document.querySelector('#year').textContent=new Date().getFullYear();
-    const canvas=document.querySelector('#particles'),ctx=canvas.getContext('2d');let dots=[];
-    function resize(){canvas.width=innerWidth;canvas.height=innerHeight;dots=Array.from({length:Math.min(90,Math.floor(innerWidth/14))},()=>({x:Math.random()*canvas.width,y:Math.random()*canvas.height,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35,r:Math.random()*1.8+.5}))}
-    function draw(){ctx.clearRect(0,0,canvas.width,canvas.height);dots.forEach((p,i)=>{p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>canvas.width)p.vx*=-1;if(p.y<0||p.y>canvas.height)p.vy*=-1;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle=i%3===0?'#ff4fd8':i%3===1?'#5bf2bd':'#42e8ff';ctx.shadowBlur=12;ctx.shadowColor=ctx.fillStyle;ctx.fill();for(let j=i+1;j<dots.length;j++){const q=dots[j],dx=p.x-q.x,dy=p.y-q.y,d=Math.hypot(dx,dy);if(d<115){ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(q.x,q.y);ctx.strokeStyle=`rgba(66,232,255,${(1-d/115)*.18})`;ctx.stroke()}}});requestAnimationFrame(draw)}
-    addEventListener('resize',resize);resize();draw();
+    const menu = document.querySelector(".menu");
+    const links = document.querySelector(".links");
+
+    menu.addEventListener("click", () => {
+      links.classList.toggle("open");
+    });
+
+    document.querySelectorAll(".links a").forEach((link) => {
+      link.addEventListener("click", () => {
+        links.classList.remove("open");
+      });
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const canvas = document.getElementById("particles");
+    const ctx = canvas.getContext("2d");
+    let dots = [];
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      dots = Array.from({ length: Math.min(90, Math.floor(window.innerWidth / 16)) }, () => ({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        vx: (Math.random() - 0.5) * 0.7,
+        vy: (Math.random() - 0.5) * 0.7,
+        r: Math.random() * 1.8 + 0.6
+      }));
+    }
+
+    function animateParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      dots.forEach((p, i) => {
+        p.x += p.vx;
+        p.y += p.vy;
+
+        if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+
+        const colors = ["#00f5d4", "#20e0d0", "#00bfff", "#0066ff", "#63e8ff"];
+        ctx.fillStyle = colors[i % colors.length];
+        ctx.shadowBlur = 12;
+        ctx.shadowColor = ctx.fillStyle;
+        ctx.fill();
+
+        for (let j = i + 1; j < dots.length; j++) {
+          const q = dots[j];
+          const dx = p.x - q.x;
+          const dy = p.y - q.y;
+          const dist = Math.hypot(dx, dy);
+
+          if (dist < 115) {
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y);
+            ctx.lineTo(q.x, q.y);
+            ctx.strokeStyle = `rgba(0, 245, 212, ${(1 - dist / 115) * 0.28})`;
+            ctx.stroke();
+          }
+        }
+      });
+
+      requestAnimationFrame(animateParticles);
+    }
+
+    window.addEventListener("resize", resizeCanvas);
+    resizeCanvas();
+    animateParticles();
   </script>
 </body>
 </html>
